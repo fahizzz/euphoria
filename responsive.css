@@ -1,0 +1,709 @@
+/* Dropdown */
+
+.dropdown_menu{
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 2rem;
+    left: auto;
+    height: 0px;
+    width: 210px;
+    background: #F6F6F6;
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open{
+    height: 220px;
+    z-index: 1;
+}
+
+.dropdown_menu li{
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown_menu li a{
+    color: #807D7E;
+    text-decoration: none;
+}
+
+
+.dropdown_menu li .dropdown_search{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    height: 30px;
+    width: 200px;
+    border-radius: 8px;
+}
+
+.dropdown_menu li .dropdown_search span{
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 20px;
+    height: 100%;
+}
+
+.dropdown_menu li .dropdown_search span img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.dropdown_menu li .dropdown_search span img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.dropdown_menu li .dropdown_search .search{
+    border: 0px;
+    font-size: 16px;
+    background-color: white;
+    overflow: hidden;
+}
+
+
+/* Responsive */
+
+@media (max-width:1650px){
+    .links li a,
+    .navbar .searchbar{
+        display: none;
+    }
+
+    .navbar .header_right .toggle_btn{
+        display: block;
+    }
+
+    .dropdown_menu{
+        display: block;
+    }
+}
+
+@media (max-width:1230px){
+    .footer_cntnt_list li a{
+        font-size: 15px;
+    }
+
+    .footer_cntnt_list li h3.heading{
+        font-size: 20px;
+    }
+
+
+}
+
+@media (max-width:1115px){
+    .footer_contents .footer_logos{
+        display: block;
+    }
+
+    .appinstl_flex {
+        justify-content: center;
+    }
+
+
+    .footer_contents{
+        padding: 30px 0p;
+    }
+
+    .footer_icons{
+        gap: 80px;
+    }
+
+    .footer_logos .footer_apps,
+    .footer_logos .footer_apps .downld_app,
+    .footer_icons{
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        width: 100%;
+    }
+
+}
+
+@media (max-width:1010px){
+    .header_right .container h1 a,
+    .navbar .header_right .container,
+    .header_right .container img{
+        display: none;
+    }
+
+    .container3{
+        display: block;
+    }
+    .container3 .container_contents{
+        margin-bottom: 30px;
+        width: 100%;
+    }
+    .image_bottom_contents h4 {
+        font-size: 19px;
+    }
+    .image_bottom_contents h5 {
+        font-size: 14px;
+    }
+    .image_bottom_contents a.price {
+        font-size: 11px;
+    }
+
+
+
+}
+
+@media (max-width:944px){
+    .banners{
+        display: block;
+        padding: 50px 0px;
+    }
+    .banners .banner_left,
+    .banners .banner_right{
+        width: 100%;
+        margin-bottom: 20px;
+    }   
+}
+
+@media (max-width:924px){
+    .arrival_contents .arrival_images li h4{
+        font-size: 15px;
+    }
+
+}
+
+@media (min-width:839px){
+    .arrival_contents  a img.left_arrow_img{
+        top: 40%;
+        width: 2%;
+    }
+    .arrival_contents  a img.right_arrow_img{
+        top: 40%;
+        width: 2%;
+    }
+
+}
+
+
+@media (max-width:838px){
+    .spotlight_img{
+        background-size: 1500px;
+        background-position: bottom -140px right -100px;
+    }
+    .spotlight_img .arrow h1 {
+        width: 10px;
+    }
+
+    
+    .we_made_flex .we_made_left_bg{
+        height: 350px;
+    }
+
+    .we_made .we_made_flex .we_made_right_bg{
+        height: 350px;
+    }
+    .wrapper .we_made_flex{
+        height: 350px;
+    }
+    .we_made_flex .we_made_left_bg .we_made_left_bg_img{
+        height: 350px;
+    }
+    .contents .everyday{
+        font-size: 20px;
+    }
+    .spotlight_img .contents {
+        height: 500px;
+    }
+    .banners{
+        padding: 30px 0px;
+    }
+    .new_arrivals{
+        padding-bottom: 50px;
+    }
+    .new_arrival {
+        padding-bottom: 15px;
+    }
+    .spotlight_img .contents h1.main_heading {
+        font-size: 49px;
+        line-height: 1.2;
+        margin-bottom: 10px;
+    }
+    .spotlight_img .contents h4.tshirt,
+    .spotlight_img .contents h4.cool{
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    .spotlight_img .contents button.shop_now {
+        padding: 6px 9px;
+    }
+    .spotlight_img .contents button.shop_now a {
+        font-size: 17px;
+    }
+
+    .arrival_text .line {
+        height: 30px;
+        width: 6px;
+    }
+    .arrival_text h3.new_arrival {
+        font-size: 29px;
+    }
+    .arrival_contents  a img.left_arrow_img{
+        top: 40%;
+        width: 2%; 
+    }
+
+    .arrival_contents  a img.right_arrow_img{
+        top: 40%;
+        width: 2%; 
+    }
+
+    .contents .everyday {
+        font-size: 16px;
+        padding-bottom: 0px;
+    }
+    .we_made_left_bg_img .contents p {
+        font-size: 13px;
+        margin: 10px 0px;
+    }
+    .we_made_left_bg_img .contents .shopnow a {
+        padding: 5px 10px;
+        font-size: 13px;
+    }
+    .image_bottom_contents h4 {
+    font-size: 16px;
+    }
+    .image_bottom_contents h5 {
+    font-size: 13px;
+    margin-top: 5px;
+    }
+    .image_bottom_contents .arrow img {
+        width: 80%;
+    }
+    li .image_bottom_contents {
+        padding: 0px;
+        height: 50px;
+    }
+    .men{
+        padding-bottom: 50px;
+    }
+    .brands{
+        padding-bottom: 50px;
+    }
+    .top_brands_deal {
+        height: 260px;
+    }
+
+    .top_brands_deal h2 {
+        font-size: 40px;
+        padding-top: 20px;
+    }
+    .top_brands_deal p {
+        font-size: 20px;
+    }
+    .top_brands_deal .brand_logos .logos{
+        height: 60px;
+        min-width: 40px;
+    }
+    .lime_light{
+        padding-bottom: 50px;
+    }
+    .line {
+        height: 30px;
+        width: 6px;
+    }
+    .lime_light_text .in_the_limelight {
+        font-size: 29px;
+        margin-left: 14px;
+    }
+    .limelight_img .wishlist{
+        top: 2%;
+        right: 2%;
+        padding: 7px;
+    }
+    .image_bottom_contents h4 {
+        font-size: 14px;
+    }
+    .image_bottom_contents h5 {
+        font-size: 11px;
+    }
+    .image_bottom_contents a.price {
+        font-size: 8px;
+    }
+    .profiles{
+        padding-bottom: 50px;
+    }
+    .dropdown_menu.open {
+        display: none;
+    }
+}
+
+@media (max-width:700px){
+    .header{
+        padding: 16px;
+    }
+    .logo{
+        min-width: 20px;
+    }
+    .footer_contents .footer_cntnt_list{
+        display: none;
+    }
+    .footer_contents{
+        padding: 10px;
+    }
+    .top_brands_deal .brand_logos .logos{
+        height: 60px;
+        min-width: 40px;
+    }
+    .copyright {
+        font-size: 12px;
+    }
+    .we_made_left_bg_img .contents p {
+        width: 70%;
+    }
+
+}
+
+@media (max-width:580px){
+    .footer_icons .logo_bg{
+        min-height: 40px;
+        min-width: 35px;
+    }
+    .footer_icons{
+        gap: 18px;
+    }
+    .footer_icons .logo_bg .logo_image{
+        width: 15px;
+        height: 20px;
+    }
+    .banners .banner_right .banner_background .contents{
+        height: 250px;
+    }
+    .banners .banner_left .banner_background .contents{
+        height: 250px;
+    }
+    .dropdown_menu{
+        display: none;
+    }
+    .navbar ul {
+        display: none;
+    }
+    .navbar .header_right {
+        width: 100%;
+        justify-content: end;
+        display: flex;
+    }
+}
+
+@media (max-width:465px){
+.wrapper{
+    width: 95%;
+}
+.spotlight_img{
+    background-size: 1200px;
+    background-position: bottom -190px right -170px;
+}
+
+.spotlight_img .contents{
+    height: 260px;
+}
+
+.spotlight_img .arrow h1 {
+    width: 5px;
+}
+
+.spotlight_img .left{
+    left: 10px;
+}
+
+.spotlight_img .right{
+    right: 20px;
+}
+
+.we_made_flex .we_made_left_bg{
+    height: 250px;
+}
+
+.we_made .we_made_flex .we_made_right_bg{
+    height: 250px;
+}
+.wrapper .we_made_flex{
+    height: 250px;
+}
+.we_made_flex .we_made_left_bg .we_made_left_bg_img{
+    height: 250px;
+}
+
+.banners{
+    padding: 20px 0px;
+}
+.new_arrivals{
+    padding-bottom: 50px;
+}
+.new_arrival {
+    padding-bottom: 15px;
+}
+.spotlight_img .contents h1.main_heading {
+    font-size: 29px;
+    line-height: 1.2;
+    margin-bottom: 0px;
+}
+.spotlight_img .contents h4.tshirt,
+.spotlight_img .contents h4.cool{
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+.spotlight_img .contents button.shop_now {
+    padding: 4px 9px;
+}
+.spotlight_img .contents button.shop_now a {
+    font-size: 10px;
+}
+
+.new_arrivals{
+    padding-bottom: 20px;
+}
+
+.arrival_text .line {
+    height: 20px;
+    width: 5px;
+}
+.arrival_text h3.new_arrival {
+    font-size: 19px;
+    padding-bottom: 0px;
+}
+
+.arrival_contents .arrival_images li h4 {
+    font-size: 10px;
+    margin: 0px
+}
+
+.arrival_contents  a img.left_arrow_img{
+    top: 40%;
+    width: 2%; 
+}
+
+.arrival_contents  a img.right_arrow_img{
+    top: 40%;
+    width: 2%; 
+}
+
+.contents .everyday {
+    font-size: 16px;
+    padding-bottom: 0px;
+}
+.we_made{
+    padding-bottom: 20px;
+}
+.we_made_left_bg_img .contents {
+    margin-left: 15px;
+}
+
+.we_made_left_bg_img .contents p {
+    font-size: 10px;
+    margin: 10px 0px;
+    width: 100%;
+}
+.we_made_left_bg_img .contents .shopnow a {
+    padding: 3px 6px;
+    font-size: 10px;
+}
+
+.we_made_flex .we_made_left_bg .we_made_left_bg_img {
+    width: 200px;
+}
+
+.image_bottom_contents h4 {
+font-size: 10px;
+margin-top: 5px;
+}
+
+.image_bottom_contents h5 {
+font-size: 8px;
+margin: 0px;
+}
+
+.image_bottom_contents .arrow img {
+    width: 60%;
+}
+li .image_bottom_contents {
+    padding: 0px;
+    height: 20px;
+}
+.men{
+    padding-bottom: 30px;
+}
+
+.men_contents .men_content {
+    gap: 15px;
+}
+.brands{
+    padding-bottom: 20px;
+}
+.top_brands_deal {
+    height: 160px;
+    align-content: center;
+}
+
+.top_brands_deal h2 {
+    font-size: 20px;
+    padding-top: 10px;
+}
+.top_brands_deal p {
+    font-size: 10px;
+    padding-top: 10px;
+}
+
+.top_brands_deal .brand_logos{
+    margin: 0px;
+    padding-top: 20px;
+    gap: 15px;
+    margin: 0px 10px;
+}
+
+.top_brands_deal .brand_logos .logos{
+    height: 40px;
+    min-width: 20px;
+}
+.lime_light{
+    padding-bottom: 30px;
+}
+
+.lime_light_text{
+    padding-bottom: 18px;
+}
+
+.line {
+    height: 20px;
+    width: 4px;
+}
+.lime_light_text .in_the_limelight {
+    font-size: 19px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    height: 20px;
+}
+
+.limelight_contents .limelight_content{
+    gap: 15px;
+}
+
+.limelight_img .wishlist{
+    top: 2%;
+    right: 2%;
+    padding: 3px;
+    width: 15px;
+}
+
+.image_bottom_contents a.price {
+    font-size: 8px;
+    padding: 2px 2px;
+}
+.profiles{
+    padding-bottom: 10px;
+}
+
+.container3 .container_contents p {
+    font-size: 15px;
+}
+
+.container3 .container_contents h3 {
+    padding: 6px 0px;
+    font-size: 15px;
+}
+
+.container3 .container_contents{
+    margin: 10px 0px;
+}
+
+
+
+.banners .banner_left .contents .lowprice {
+    font-size: 1.3em;
+}
+
+.banners .banner_left .contents .high {
+    font-size: 2em;
+    margin-top: 5px;
+}
+.banners .banner_left .contents .off {
+    font-size: 1.3em;
+    margin-top: 7px;
+}
+
+.banners .banner_left .contents a.explore {
+    font-size: 1.3em;
+    margin-top: 10px;
+}
+
+.banners .banner_right .banner_background .contents .lowprice {
+    font-size: 1.3em;
+}
+
+.banners .banner_right .banner_background .contents .high {
+    font-size: 2em;
+    margin-top: 5px;
+}
+.banners .banner_right .banner_background .contents .off {
+    font-size: 1.3em;
+    margin-top: 7px;
+}
+
+.banners .banner_right .banner_background .contents a.explore {
+    font-size: 1.3em;
+    margin-top: 10px;
+}
+
+.appinstl_flex{
+    justify-content: center;
+    align-items: center;
+}
+
+.app_instl{
+    height: 40px;
+    width: 140px;
+}
+
+
+.footer_icons .logo_bg .logo_image{
+
+}
+.app_instl .apps_img{
+    width: 20px;
+}
+
+.app_instl .apps_img img{
+    width: 80%;
+}
+
+.app_instl .apps_contents p{
+    font-size: 10px;
+}
+
+
+.app_instl .apps_contents h5{
+    font-size: 15px;
+}
+
+@media (max-width:420px){
+    .banners .banner_left .banner_background .contents {
+        width: 180px;
+    }
+
+    .banners .banner_right .banner_background .contents {
+        width: 180px;
+    }
+
+    .copyright {
+        font-size: 10px;
+    }
+}
+}
+
+
+
+
+
+
