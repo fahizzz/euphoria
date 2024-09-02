@@ -4,60 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Euphoria</title>
+    <link rel="shortcut icon" href="assets/Logo.svg"  type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <section class="header">
-        <h1 class="logo">
-            <a href="#"><img src="assets/Logo.svg" alt="logo"></a>
-        </h1>
+    <nav class="navbar">
+        
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fa-solid fa-bars" id="bars"></i>
+        </label> 
 
-        <nav class="navbar">
-            <ul class="links">
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">Men</a></li>
-                <li><a href="#">Women</a></li>
-                <li><a href="#">Combos</a></li>
-                <li><a href="#">Joggers</a></li>
-            </ul>
+        <label class="logo"><img src="assets/Logo.svg" alt="logo"/></label>
 
-            <div class="searchbar">
-                <span><img src="assets/search.svg" alt="search"></span>
-                <input type="search" placeholder="search" name="search" class="search">
-            </div>
-
-            <div class="header_right">
-                <div class="container">
-                    <h1><a href="#"><img src="assets/wishlist.svg" alt="heart"></a></h1>
-                </div>
-                <div class="container">
-                    <h1><a href="#"><img src="assets/account.svg" alt="heart"></a></h1>
-                </div>
-                <div class="container">
-                    <h1><a href="#"><img src="assets/cart.svg" alt="heart"></a></h1>
-                </div>
-                <div class="toggle_btn">
-                    <i class="fa-solid fa-bars"></i>
-                </div>
-            </div>
-        </nav>
-
-        <div class="dropdown_menu open">
+        <ul class="navbarul">
             <li><a href="#">Shop</a></li>
             <li><a href="#">Men</a></li>
             <li><a href="#">Women</a></li>
             <li><a href="#">Combos</a></li>
             <li><a href="#">Joggers</a></li>
-            <li>
-                <div class="dropdown_search">
-                    <span><img src="assets/search.svg" alt="search"></span>
-                    <input type="search" placeholder="search" name="search" class="search">
-                </div>
+        </ul>
+
+        <ul class="navbar_search">
+            
+            <span><img src="assets/search.svg" alt="search"/></span>
+            <input type="search" placeholder="search" name="search" class="search"/>
+            
+        </ul>
+
+        <ul class="header_right">
+            <li class="container">
+                <h1><a href="#"><img src="assets/wishlist.svg" alt="heart"></a></h1>
             </li>
-        </div>
-    </section>
+            <li class="container">
+                <h1><a href="#"><img src="assets/account.svg" alt="heart"></a></h1>
+            </li>
+            <li class="container">
+                <h1><a href="#"><img src="assets/cart.svg" alt="heart"></a></h1>
+            </li>
+        </ul>
+    </nav>
 
     <main>
         <section class="spotlight">
@@ -76,6 +64,10 @@
                         <button class="shop_now"><a href="#">Shop Now</a></button>
                     </div>
                 </div> 
+            </div>
+            <div class="slider">
+                <div class="left"></div>
+                <div class="right"></div>
             </div>  
         </section>
 
@@ -107,9 +99,9 @@
             </section>
         </section>
 
-        <section class="new_arrivals">
+        <section class="new_arrivals arrival">
             <section class="wrapper">
-                <div class="arrival_text">
+                <div class="arrival_text arrrival_text_1">
                     <div class="line"></div>
                     <h3 class="new_arrival">New Arrival</h3>
                 </div>
@@ -179,19 +171,19 @@
                             </div>
                             <div class="image_bottom_contents">
                                 <h4>Shirts</h4>
-                                <h5>Explore Now</h5>
-                                <div class="arrow"><img src="assets/arrow-right.svg" alt="arrow"></div>
+                                <h5>Explore Now!</h5>
+                                <div class="arrow"><img src="assets/icons8-arrow-30.png" alt="arrow"></div>
                             </div>
                         </li>
 
                         <li>
                             <div class="men_content_img">
-                                <img src="assets/img-6.jpg" alt="image">
+                                <img src="assets/img-6.jpg" alt="image"/>
                             </div>
                             <div class="image_bottom_contents">
                                 <h4>Printed T-Shirts</h4>
-                                <h5>Explore Now</h5>
-                                <div class="arrow"><img src="assets/arrow-right.svg" alt="arrow"></div>
+                                <h5>Explore Now!</h5>
+                                <div class="arrow"><img src="assets/icons8-arrow-30.png" alt="arrow"/></div>
                             </div>
                         </li>
 
@@ -201,8 +193,8 @@
                             </div>
                             <div class="image_bottom_contents">
                                 <h4>Plain T-Shirt</h4>
-                                <h5>Explore Now</h5>
-                                <div class="arrow"><img src="assets/arrow-right.svg" alt="arrow"></div>
+                                <h5>Explore Now!</h5>
+                                <div class="arrow"><img src="assets/icons8-arrow-30.png" alt="arrow"/></div>
                             </div>
                         </li>
 
@@ -212,43 +204,43 @@
                             </div>
                             <div class="image_bottom_contents">
                                 <h4>Polo T-Shirt</h4>
-                                <h5>Explore Now</h5>
-                                <div class="arrow"><img src="assets/arrow-right.svg" alt="arrow"></div>
+                                <h5>Explore Now!</h5>
+                                <div class="arrow"><img src="assets/icons8-arrow-30.png" alt="arrow"/></div>
                             </div>
                         </li>
 
                         <li>
                             <div class="men_content_img">
-                                <img src="assets/img-9.jpg" alt="image">
+                                <img src="assets/img-9.jpg" alt="image"/>
                             </div>
                             <div class="image_bottom_contents">
                                 <h4>Hoodies & Sweetshirt</h4>
-                                <h5>Explore Now</h5>
-                                <div class="arrow"><img src="assets/arrow-right.svg" alt="arrow"></div>
+                                <h5>Explore Now!</h5>
+                                <div class="arrow"><img src="assets/icons8-arrow-30.png" alt="arrow"/></div>
                             </div>
                         </li>
 
                         <li>
                             <div class="men_content_img">
-                                <img src="assets/img-10.jpg" alt="image">
+                                <img src="assets/img-10.jpg" alt="image"/>
                             </div>
                             <div class="image_bottom_contents">
                                 <h4>Jeans</h4>
-                                <h5>Explore Now</h5>
-                                <div class="arrow"><img src="assets/arrow-right.svg" alt="arrow"></div>
+                                <h5>Explore Now!</h5>
+                                <div class="arrow"><img src="assets/icons8-arrow-30.png" alt="arrow"/></div>
                             </div>
                         </li>
 
                         <li>
                             <div class="sitting">
                                 <div class="sitting_man_image">
-                                    <img class="sitting_img" src="assets/sitting.jpg" alt="image">
+                                    <img class="sitting_img" src="assets/sitting.jpg" alt="image"/>
                                 </div>
                             </div>
                             <div class="image_bottom_contents">
                                 <h4>Activewear</h4>
-                                <h5>Explore Now</h5>
-                                <div class="arrow"><img src="assets/arrow-right.svg" alt="arrow"></div>
+                                <h5>Explore Now!</h5>
+                                <div class="arrow"><img src="assets/icons8-arrow-30.png" alt="arrow"/></div>
                             </div>
                         </li>
 
@@ -258,8 +250,8 @@
                             </div>
                             <div class="image_bottom_contents">
                                 <h4>Boxers</h4>
-                                <h5>Explore Now</h5>
-                                <div class="arrow"><img src="assets/arrow-right.svg" alt="arrow"></div>
+                                <h5>Explore Now!</h5>
+                                <div class="arrow"><img src="assets/icons8-arrow-30.png" alt="arrow"/></div>
                             </div>
                         </li>
                     </ul>
@@ -278,12 +270,12 @@
                     <ul class="men_content">
                         <li>
                             <div class="men_content_img">
-                                <img src="assets/img-12.jpg" alt="image">
+                                <img src="assets/img-12.jpg" alt="image"/>
                             </div>
                             <div class="image_bottom_contents">
                                 <h4>Hoodies & Sweetshirt</h4>
-                                <h5>Explore Now</h5>
-                                <div class="arrow"><img src="assets/arrow-right.svg" alt="arrow"></div>
+                                <h5>Explore Now!</h5>
+                                <div class="arrow"><img src="assets/icons8-arrow-30.png" alt="arrow"/></div>
                             </div>
                         </li>
 
@@ -293,30 +285,30 @@
                             </div>
                             <div class="image_bottom_contents">
                                 <h4>Coats & Parkas</h4>
-                                <h5>Explore Now</h5>
-                                <div class="arrow"><img src="assets/arrow-right.svg" alt="arrow"></div>
+                                <h5>Explore Now!</h5>
+                                <div class="arrow"><img src="assets/icons8-arrow-30.png" alt="arrow"/></div>
                             </div>
                         </li>
 
                         <li>
                             <div class="men_content_img">
-                                <img src="assets/img-14.jpg" alt="image">
+                                <img src="assets/img-14.jpg" alt="image"/>
                             </div>
                             <div class="image_bottom_contents">
                                 <h4>Tees & T-Shirt</h4>
-                                <h5>Explore Now</h5>
-                                <div class="arrow"><img src="assets/arrow-right.svg" alt="arrow"></div>
+                                <h5>Explore Now!</h5>
+                                <div class="arrow"><img src="assets/icons8-arrow-30.png" alt="arrow"/></div>
                             </div>
                         </li>
 
                         <li>
                             <div class="men_content_img">
-                                <img src="assets/img-15.jpg" alt="image">
+                                <img src="assets/img-15.jpg" alt="image"/>
                             </div>
                             <div class="image_bottom_contents">
                                 <h4>Boxers</h4>
-                                <h5>Explore Now</h5>
-                                <div class="arrow"><img src="assets/arrow-right.svg" alt="arrow"></div>
+                                <h5>Explore Now!</h5>
+                                <div class="arrow"><img src="assets/icons8-arrow-30.png" alt="arrow"/></div>
                             </div>
                         </li>
                     </ul>
@@ -331,23 +323,23 @@
                     <p>Up To <span>60%</span> off on brands</p>
                     <div class="brand_logos">
                         <div class="logos">
-                            <img src="assets/nike.jpg" alt="logos">
+                            <img src="assets/nike.jpg" alt="logos"/>
                         </div>
 
                         <div class="logos">
-                            <img src="assets/H&M.jpg" alt="logos">
+                            <img src="assets/H&M.jpg" alt="logos"/>
                         </div>
 
                         <div class="logos">
-                            <img src="assets/levis.jpg" alt="logos">
+                            <img src="assets/levis.jpg" alt="logos"/>
                         </div>
 
                         <div class="logos">
-                            <img src="assets/USPA.jpg" alt="logos">
+                            <img src="assets/USPA.jpg" alt="logos"/>
                         </div>
 
                         <div class="logos">
-                            <img src="assets/puma.jpg" alt="logos">
+                            <img src="assets/puma.jpg" alt="logos"/>
                         </div>
                     </div>
                 </div>

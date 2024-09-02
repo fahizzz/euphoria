@@ -27,13 +27,18 @@
     */
 
 @font-face {
-    font-family: "causten";
-    src: url('/fonts/Causten-semibold.otf') format('woff2');
-};
+    font-family: causten;
+    src: url(/fonts/Causten-SemiBold.otf)
+}
 
 @font-face {
-    font-family: "core-sans";
-    src: url('/fonts/Causten-ExtraLight.otf') format('hello');
+    font-family: core-sans;
+    src: url(/fonts/Demo_Fonts/Fontspring-DEMO-coresansc65.otf)
+}
+
+@font-face {
+    font-family: causten-light;
+    src: url(fonts/Causten-Thin.otf);
 }
 
  /* 
@@ -46,14 +51,6 @@ main{background-color: var(--white);}
     margin: 0 auto;
 }
 
-.header{
-    display: flex;
-    padding: 25px 150px;
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid var(--fade-black);
-    font-family: 'causten';    
-}
 
 .logo{min-width: 90px;}
 
@@ -66,7 +63,27 @@ main{background-color: var(--white);}
     display: flex;
     align-items: center;
     width: 100%;
-    justify-content: space-between;
+    height: 108px;
+    justify-content: space-around;
+}
+
+.logo{
+}
+
+.checkbtn #bars{
+    color: var(--fade-black);
+    font-size: 20px;
+    cursor: pointer;
+    position: absolute;
+    left: auto;
+    right: 0;
+    top: 30px;
+    margin-right: 20px;
+    display: none;
+}
+
+#check{
+    display: none;
 }
 
 .navbar ul{
@@ -74,7 +91,6 @@ main{background-color: var(--white);}
     display: flex;
     gap: 70px;
     align-items: center;
-    margin-left: 150px;
 }
 
 
@@ -83,6 +99,7 @@ main{background-color: var(--white);}
     font-size: 22px;
     color: var(--fade-black);
     font-family: 'causten';
+    transition: all 0.3s;
 }
 
 .navbar ul li a:hover{
@@ -92,7 +109,7 @@ main{background-color: var(--white);}
 
 .navbar ul li:first-child a{color: var(--black);}
 
-.navbar .searchbar{
+.navbar .navbar_search{
     display: flex;
     align-items: center;
     background-color: var(--component);
@@ -101,21 +118,21 @@ main{background-color: var(--white);}
     border-radius: 8px;
 }
 
-.navbar .searchbar span{
+.navbar .navbar_search span{
     margin-left: 10px;
     margin-right: 10px;
     width: 20px;
     height: 100%;
 }
 
-.navbar .searchbar span img{
+.navbar .navbar_search span img{
     width: 100%;
     height: 100%;
     display: block;
 }
 
 
-.navbar .searchbar .search{
+.navbar .navbar_search .search{
     border: 0px;
     font-size: 16px;
     background-color: var(--component);
@@ -126,6 +143,7 @@ main{background-color: var(--white);}
     display: flex;
     gap: 15px;
     align-items: center;
+    margin-right: 30px;
 }
 
 .navbar .header_right .toggle_btn{
@@ -156,6 +174,10 @@ main{background-color: var(--white);}
     display: block;
 }
 
+.navbar .header_right .toggle_btn::before {
+    
+}
+
 .spotlight{
     position: relative;
 }
@@ -170,7 +192,7 @@ main{background-color: var(--white);}
 }
 
 .spotlight_img .contents{
-    font-family: 'causten';
+    font-family: core-sans;
     width: 80%;
     margin: 0 auto;
     color: var(--white);
@@ -186,6 +208,7 @@ main{background-color: var(--white);}
     line-height: 37.77px;
     font-weight: 500;
     margin-bottom: 30px;
+    font-family: causten;
 }
 
 .spotlight_img .contents h1.main_heading{
@@ -199,6 +222,7 @@ main{background-color: var(--white);}
     margin-bottom: 20px;
     font-size: 32px;
     line-height: 47.21px;
+    font-family: causten;
 }
 
 .spotlight_img .contents button.shop_now{
@@ -269,6 +293,35 @@ main{background-color: var(--white);}
 
 .spotlight_img .left h1 a img{rotate: 180deg;}
 
+.spotlight .slider{
+    display: flex;
+    gap: 2px;
+    position: absolute;
+    top: auto;
+    bottom: 40px;
+    right: 50%;
+    left: auto;
+
+}
+
+.spotlight .slider .left{
+    height: 10px;
+    width: 63px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: #ffff;
+}
+
+.spotlight .slider .right{
+    height: 10px;
+    width: 63px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #ffff;
+    opacity: 50%;
+}
+
+
 .banners{
     display: flex;
     gap: 40px;
@@ -290,12 +343,12 @@ main{background-color: var(--white);}
     object-fit: fill;
     display: block;
     border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.45) 3.95px 2.95px 3.6px;
+    box-shadow: rgba(100, 100, 111, 0.7) 0px 7px 29px 0px;
 }
 
 .banners .banner_left .contents{
     color: var(--white);
-    font-family: 'core-sans';
+    font-family: causten;
     width: 350px;
     align-content: center;
     height: 400px;
@@ -306,6 +359,7 @@ main{background-color: var(--white);}
     font-size: 2em;
     line-height: 30.07px;
     font-weight: 600;
+    font-family: core-sans;
 }
 
 .banners .banner_left .contents .high{
@@ -340,7 +394,7 @@ main{background-color: var(--white);}
     background-size: 160%;
     border-radius: 10px;
     object-fit: fill;
-    box-shadow: rgba(0, 0, 0, 0.45) 3.95px 2.95px 3.6px;
+    box-shadow: rgba(100, 100, 111, 0.7) 0px 7px 29px 0px;
 }
 
 
@@ -388,21 +442,23 @@ main{background-color: var(--white);}
 
 .arrival_text{
     display: flex;
+    align-items: center;
+    padding-bottom: 50px;
 }
 
 .arrival_text .line{
     background-color: var(--blue);
-    height: 45px;
+    height: 40px;
     width: 8px;
     border-radius: 8px;
 }
 
 .arrival_text h3.new_arrival{
-    margin-left: 8px;
-    font-size: 38px;
+    margin-left: 20px;
+    font-size: 34px;
     font-weight: 800;
     font-family: 'causten';
-
+    color: #3C4242;
 }
 
 .arrival_contents{
@@ -413,11 +469,12 @@ main{background-color: var(--white);}
 .arrival_contents  a img.right_arrow_img{
     position: absolute;
     top: 50%;
+    left: -10px;
 }
 
 .arrival_contents  a img.left_arrow_img{
     position: absolute;
-    right: 0px;
+    right: -10px;
     left: auto;
     top: 50%;
 }
@@ -442,7 +499,10 @@ main{background-color: var(--white);}
     font-size: 24px;
     font-weight: 600;
     margin-top: 10px;
+    color: #3C4242;
 }
+
+
 
 .we_made{
     padding-bottom: 50px;
@@ -498,23 +558,22 @@ main{background-color: var(--white);}
     font-size: 33px;
     font-weight: 900;
     padding-bottom: 20px;
+    font-family: core-sans;
 }
 
 .we_made_left_bg_img .contents p{
     width: 40%;
     color: var(--white);
     font-weight: 100;
-    margin-top: 25px;
     margin-bottom: 30px;
     line-height: 1.5;
-    font-family: 'core-sans';
-
+    font-weight: 100;
 }
 
 .we_made_left_bg_img .contents .shopnow a{
     color: var(--black);
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 12px 44px 12px 44px;
     background-color: var(--white);
     border-radius: 7px;
     display: inline-block;
@@ -543,7 +602,7 @@ main{background-color: var(--white);}
 
 .men_content_img img{
     width: 100%;
-    display: block;
+    display: block; 
 }
 
 li .image_bottom_contents{
@@ -556,7 +615,7 @@ li .image_bottom_contents{
 
 .image_bottom_contents h4{
     color: var(--black);
-    font-size: 20px;
+    font-size: 18.88px;
     font-weight: 700;
     margin-top: 15px;
 }
@@ -570,7 +629,7 @@ li .image_bottom_contents{
 .image_bottom_contents .arrow{
     position: absolute;
     top: 50%;
-    right: 5%;
+    right: 1%;
     left: auto;
 }
 
@@ -612,7 +671,7 @@ li .image_bottom_contents{
 }
 
 .top_brands_deal h2{
-    font-size: 60px;
+    font-size: 50px;
     padding-top: 50px;
     font-weight: 900;
 }
@@ -624,7 +683,8 @@ li .image_bottom_contents{
 }
 
 .top_brands_deal p span{
-    color: rgb(255, 208, 0);
+    color:#FBD103;
+    
 }
 
 .top_brands_deal .brand_logos{
@@ -677,7 +737,9 @@ li .image_bottom_contents{
     justify-content: center;
 }
 
-.limelight_contents{}
+.limelight_contents{
+    font-family: causten;
+}
 
 .limelight_contents .limelight_content{
     list-style-type: none;
@@ -716,9 +778,6 @@ li .image_bottom_contents{
     height: 20px;
 }
 
-.image_bottom_contents h4{
-    font-size: 26px;
-}
 
 .image_bottom_contents h5{}
 
@@ -747,8 +806,9 @@ li .image_bottom_contents{
     padding: 20px;
     width: 90%;
     height: 100%;
-    border: 1px solid var(--fade-black);
+    border: 2px solid #BEBCBD;
     border-radius: 8px;
+    font-family: causten;
 }
 
 .position_star{
@@ -791,7 +851,9 @@ li .image_bottom_contents{
 .container3 .container_contents p{
     line-height: 20.6px;
     color: var(--fade-black);
-    font-size: 19px;
+    font-size: 14px;
+    font-family: causten-light;
+    font-weight: 700;
 }
 
 .footer{
@@ -821,13 +883,15 @@ li .image_bottom_contents{
     font-size: 30px;
     padding-bottom: 85px;
     font-weight: 700;
+    color: #F6F6F6;
 }
 
 .footer_cntnt_list li a{
     font-size: 20px;
     padding-bottom: 15px;
-    color: var(--white);
+    color: #F6F6F6;
     text-decoration: none;
+    font-weight: 200;
 }
 
 .downld_app h4{
@@ -939,6 +1003,7 @@ li .image_bottom_contents{
 .app_instl .apps_contents h5{
     font-size: 20px;
     color: var(--white);
+    font-family: causten;
 }
 
 .categories{
